@@ -1,0 +1,24 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.mainDiv {
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  height: 40px;
+  cursor: pointer;
+  .img {
+    width: 40px;
+    border-radius: 50%;
+    height: 40px;
+  }
+  .initials {
+    color: #4f46e5;
+    border: 1.5px solid #4f46e5;
+    border-radius: 50%;
+    padding: 11px;
+    @include font14;
+    background: rgba(79, 70, 229, 0.1);
+  }
+}

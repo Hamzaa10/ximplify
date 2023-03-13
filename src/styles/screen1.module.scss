@@ -1,0 +1,37 @@
+@import "../styles/breakpoints";
+@import "../styles/colors";
+@import "../styles/mixin";
+
+.text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .p1 {
+    font-size: calc(30px + (50 - 30) * (100vw - 280px) / (2560 - 280));
+    font-weight: 600;
+    text-align: center;
+    @media (max-width: 425px) {
+      width: calc(200px + (200 - 100) * (100vw - 280px) / (2560 - 280));
+    }
+  }
+  .p2 {
+    @include font24;
+    font-weight: 300 !important;
+    margin: 18px 0 30px;
+  }
+  .btn {
+    cursor: pointer;
+    background: #ffffff;
+    border: 1px solid #bbbfc1;
+    border-radius: 4px;
+    padding: 12px 30px;
+    .btnText {
+      @include font18;
+      color: #242731;
+    }
+    .img {
+      margin-left: 10px;
+    }
+  }
+}
