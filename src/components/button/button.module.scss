@@ -1,0 +1,64 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: max-content;
+  height: calc(30px + (50 - 30) * (100vw - 280px) / (2560 - 280));
+  padding-top: calc(5px + (12 - 5) * (100vw - 280px) / (2560 - 280));
+  padding-bottom: calc(5px + (12 - 5) * (100vw - 280px) / (2560 - 280));
+  padding-left: calc(11px + (20 - 11) * (100vw - 280px) / (2560 - 280));
+  padding-right: calc(11px + (20 - 11) * (100vw - 280px) / (2560 - 280));
+  background: linear-gradient(91.82deg, #ff6c4a -18.02%, #ff2f61 141.11%);
+  border-radius: calc(2px + (6 - 2) * (100vw - 280px) / (2560 - 280));
+  cursor: pointer;
+  border: none;
+  box-shadow: none;
+
+  .img {
+    margin-left: 3px;
+    width: calc(9px + (19 - 9) * (100vw - 280px) / (2560 - 280));
+    height: calc(8px + (15 - 8) * (100vw - 280px) / (2560 - 280));
+  }
+
+  .img1 {
+    margin-right: 3px;
+    width: calc(9px + (19 - 9) * (100vw - 280px) / (2560 - 280));
+    height: calc(8px + (15 - 8) * (100vw - 280px) / (2560 - 280));
+  }
+
+  .btnTitle {
+    color: white;
+    @include font16;
+    font-family: "Poppins";
+  }
+}
+.btn2 {
+  cursor: pointer;
+  width: 56px;
+  height: 56px;
+  background: #57b993;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.12), 0px 6px 6px rgba(0, 0, 0, 0.24);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  z-index: 1;
+  bottom: 50px;
+
+  @media (max-width: $md) {
+    display: flex;
+  }
+}

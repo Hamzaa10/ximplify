@@ -97,7 +97,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -125,7 +125,7 @@
 
 .thirteen::before,
 .thirteen::after {
-  content: '';
+  content: "";
   position: absolute;
   z-index: -1;
 }
@@ -272,7 +272,26 @@
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0deg);
   }
+}
+
+.btn {
+  background: white !important;
+  border: 1px solid #ff6c4a !important;
+}
+.btnText {
+  color: #ff6c4a !important;
+}
+.btn1 {
+  background: white !important;
+  border: none;
+}
+.btnText1 {
+  color: #ff6c4a !important;
+}
+.img {
+  margin-left: 15px !important;
 }

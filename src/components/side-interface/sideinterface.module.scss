@@ -1,0 +1,71 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.mainDiv {
+  background: linear-gradient(150.29deg, #ff624e -2.63%, #ff365e 107.23%);
+  border-radius: 14.375px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  height: 100%;
+  .p1 {
+    @include font40;
+    font-weight: 600 !important;
+    color: #fff;
+    margin-bottom: calc(3px + (16 - 3) * (100vw - 280px) / (2560 - 280));
+    width: 100%;
+    max-width: 500px;
+    @media (max-width: 1440px) {
+      max-width: 380px;
+    }
+  }
+  .p2 {
+    @include font20;
+    font-weight: 400 !important;
+    color: #fff;
+    margin-bottom: calc(10px + (20 - 10) * (100vw - 280px) / (2560 - 280));
+  }
+  .img {
+    width: 100%;
+    height: 540px;
+    margin: 20px 0;
+    @media (max-width: 1440px) {
+      height: 400px;
+    }
+    @media (max-width: 1024px) {
+      height: 350px;
+    }
+  }
+
+  // .sliderItem {
+  //   display: flex !important;
+  //   justify-content: center;
+  //   align-items: center;
+  //   width: 100%;
+  //   // height: 20px;
+  //   // background-color: #f1f1f1;
+  //   margin: 0 20px;
+  //   height: 90px;
+  //   width: 90px !important;
+  //   img {
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+  // }
+
+  // .slider {
+  //   width: 100%;
+  //   // background-color: black !important;
+  // }
+
+  // .slick-dots li button:before {
+  //   color: #333;
+  //   font-size: 14px;
+  // }
+
+  // .slick-dots li.slick-active button:before {
+  //   color: #000;
+  // }
+}

@@ -1,0 +1,18 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.mainDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid #fe281a;
+  border-radius: 8px;
+  padding: 19px;
+  .img {
+    margin-right: 10px;
+  }
+  .text {
+    @include font14;
+    color: #fe281a;
+  }
+}

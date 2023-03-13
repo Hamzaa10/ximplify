@@ -1,0 +1,25 @@
+@import "../../styles/breakpoints.scss";
+@import "../../styles/colors.scss";
+@import "../../styles/mixin.scss";
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  .tagsText {
+    background: #facccc;
+    border-radius: 50px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 0px 5px;
+    p {
+      @include font12;
+      color: #e92424;
+      text-transform: capitalize;
+    }
+  }
+}

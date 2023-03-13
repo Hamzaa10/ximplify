@@ -1,0 +1,33 @@
+@import "../../styles/breakpoints";
+@import "../../styles/colors";
+@import "../../styles/mixin";
+
+.mainDiv {
+  display: flex;
+  align-items: center;
+  .steps {
+    height: 9px;
+    width: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background-color: #e8eae9;
+    position: relative;
+    margin-right: 5px;
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+  .active,
+  .completed {
+    background: linear-gradient(91.82deg, #ff6c4a -18.02%, #ff2f61 141.11%);
+  }
+  .next {
+    background-color: #c6c6c6;
+  }
+}
+.text {
+  @include font12;
+  margin: 5px 0 0 5px;
+}
