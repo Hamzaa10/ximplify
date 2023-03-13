@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 
-import Screen1 from './onBoarding1'
-import Screen2 from './onBoarding2'
+import Screen1 from './screen1'
+import Screen2 from './screen2'
 import ProgressBar from '@/components/progress-bar'
 
 import style from '../../styles/welcome.module.scss'
