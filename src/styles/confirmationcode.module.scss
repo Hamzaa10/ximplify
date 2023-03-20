@@ -54,7 +54,7 @@
     padding: 25px 60px;
   }
   @media (max-width: 425px) {
-    justify-content: flex-start;
+    justify-content: space-between;
     padding: 25px 15px;
   }
 }
@@ -89,14 +89,6 @@
   @media (max-width: $tab) {
     grid-template-columns: repeat(1, 1fr);
   }
-}
-.requiredMsg {
-  position: absolute;
-  right: 0px;
-  top: 7px;
-  color: red;
-  font-size: 13px;
-  font-weight: 500;
 }
 .codeDiv {
   margin: 25px 0 10px;

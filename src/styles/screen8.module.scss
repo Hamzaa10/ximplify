@@ -9,19 +9,16 @@
   justify-content: center;
   height: calc(100vh - 370px);
   @media (max-width: 500px) {
-    height: calc(100vh - 254px);
+    height: calc(100vh - 354px);
   }
   .p1 {
-    font-size: calc(30px + (50 - 30) * (100vw - 280px) / (2560 - 280));
+    font-size: calc(24px + (50 - 40) * (100vw - 280px) / (2560 - 280));
     font-weight: 600;
     text-align: center;
-    @media (max-width: 425px) {
-      width: calc(200px + (200 - 100) * (100vw - 280px) / (2560 - 280));
-    }
   }
   .p2 {
-    @include font24;
-    font-weight: 300 !important;
+    font-size: calc(22px + (50 - 40) * (100vw - 280px) / (2560 - 280));
+    font-weight: 600;
     margin: 18px 0 30px;
   }
   .btn {

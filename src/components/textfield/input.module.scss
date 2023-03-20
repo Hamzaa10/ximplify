@@ -3,7 +3,7 @@
 @import "../../styles/mixin";
 
 .inputContainer {
-  position: relative;
+  width: 100%;
   label {
     @include font18;
     color: #121722;

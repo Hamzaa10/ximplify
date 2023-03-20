@@ -66,7 +66,6 @@ const TextField = ({
           </label>
         )}
         <div
-          style={{ position: 'relative' }}
           className={className}
           onClick={parentClick}
         >

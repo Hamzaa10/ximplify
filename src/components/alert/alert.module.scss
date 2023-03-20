@@ -7,7 +7,7 @@
   align-items: center;
   border: 1px solid #fe281a;
   border-radius: 8px;
-  padding: 19px;
+  padding: calc(12px + (20 - 10) * (100vw - 280px) / (2560 - 280));
   .img {
     margin-right: 10px;
   }

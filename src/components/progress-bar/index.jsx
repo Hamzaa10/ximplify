@@ -2,14 +2,7 @@ import React from 'react';
 
 import style from './progressbar.module.scss';
 
-const ProgressBar = ({ active, setActive }) => {
-
-    const handleClick = (step) => {
-        if (step <= active) {
-            setActive(step);
-        }
-    };
-
+const ProgressBar = ({ active }) => {
     return (
         <>
             <div className={style.mainDiv}>
@@ -22,13 +15,13 @@ const ProgressBar = ({ active, setActive }) => {
                                 ? style.active
                                 : ''
                             } ${index + 1 === active + 1 ? style.next : ''}`}
-                        onClick={() => handleClick(index + 1)}>
+                    >
                     </div>
                 ))}
             </div>
-            <div className={style.text}>
+            <span className={style.text}>
                 {active} of {bars.length}
-            </div>
+            </span>
         </>
     );
 };

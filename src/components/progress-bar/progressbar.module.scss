@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   .steps {
-    height: 9px;
+    height: 10px;
     width: 44px;
     display: flex;
     justify-content: center;
@@ -29,5 +29,5 @@
 }
 .text {
   @include font12;
-  margin: 5px 0 0 5px;
+  margin-left: calc(3px + (5 - 2) * (100vw - 280px) / (2560 - 280));
 }

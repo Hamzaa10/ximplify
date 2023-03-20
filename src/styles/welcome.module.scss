@@ -8,7 +8,6 @@
   height: 100vh;
   .leftDiv {
     width: 100%;
-    // padding: calc(35px + (100 - 80) * (100vw - 280px) / (2560 - 280));
     padding: 100px;
     @media (max-width: 1024px) {
       padding: 80px;
@@ -17,17 +16,15 @@
       padding: 50px 40px;
     }
     @media (max-width: 320px) {
-      padding: 30px;
+      padding: 15px;
     }
     .logo {
       margin-bottom: 60px;
       width: 281px;
       @media (max-width: 425px) {
         width: 180px;
+        margin-bottom: 40px;
       }
-    }
-    .bar {
-      margin-bottom: calc(80px + (130 - 50) * (100vw - 280px) / (2560 - 280));
     }
   }
   .rightDiv {
@@ -35,10 +32,6 @@
     position: relative;
     @media (max-width: 1000px) {
       display: none;
-    }
-    .sideImg {
-      //   width: calc(200px + (382 - 212) * (100vw - 280px) / (2560 - 280));
-      //   height: 100%;
     }
     .help {
       position: absolute;
@@ -58,3 +51,27 @@
     }
   }
 }
+// .slideDiv {
+//   position: absolute;
+//   width: calc(100vw - 582px);
+//   @media (max-width: 1000px) {
+//     width: calc(100vw - 160px);
+//   }
+//   @media (max-width: 450px) {
+//     width: calc(100vw - 80px);
+//   }
+// }
+// .scroll {
+//   top: -430px;
+// }
+// .slideDiv {
+//   position: relative;
+//   transition: transform 0.5s ease;
+// }
+
+// .screen1 {
+//   transform: translateY(-850px);
+// }
+// .screen2 {
+//   transform: translateY(-1500px);
+// }

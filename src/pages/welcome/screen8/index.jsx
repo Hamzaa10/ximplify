@@ -3,17 +3,18 @@ import Image from 'next/image'
 
 import Button from '@/components/button'
 
-import style from '../../../styles/screen1.module.scss'
+import style from '../../../styles/screen8.module.scss'
 import arrow from '../../../assets/right.svg'
 
-const Screen1 = ({ setActive }) => {
+const Screen8 = ({ setActive }) => {
     return (
         <div className={style.text}>
-            <p className={style.p1}>Welcome to Ximplify App</p>
-            <p className={style.p2}>This will only take a minute</p>
+            <p className={style.p1}>Thats it. Now go and change the world!
+                🎉</p>
+            <p className={style.p2}>Don’t forget to have fun.</p>
             <Button
-                handleClick={() => setActive(2)}
-                text="Let’s do it"
+                handleClick={() => setActive(8)}
+                text="Let’s Play with Ximplify App"
                 iconEnd={arrow}
                 btnClass={style.btn}
                 btnTextClass={style.btnText}
@@ -23,4 +24,4 @@ const Screen1 = ({ setActive }) => {
     )
 }
 
-export default Screen1
+export default Screen8
