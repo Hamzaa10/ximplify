@@ -64,6 +64,7 @@ const Selection = ({
   isPrice,
   inputValue,
   id,
+  text,
 }) => {
   const [customErr, setCustomErr] = useState(undefined);
   const [open, setOpen] = useState(false);
@@ -143,10 +144,10 @@ const Selection = ({
 
   return (
     <>
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <p className={style.para}>I will start using Ximplify for </p>
+      <div className={style.text}>
+        {text && (<p className={style.para}>{text}</p>)}
         <div
-          style={{ position: "relative", flex: '1' }}
+          style={{ position: "relative", flex: '1', width: "100%" }}
           className={widthClass}
           id="scrollContainer"
         >

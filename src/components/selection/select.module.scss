@@ -151,4 +151,15 @@
   margin-right: 20px;
   width: 100%;
   max-width: 180px;
+  @media (max-width: 500px) {
+    margin-bottom: 8px;
+  }
+}
+.text {
+  display: flex;
+  align-items: center;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }

@@ -94,6 +94,7 @@ export default function Home() {
         />
         <TabsComponent tabs={tabs} active={active} />
         <Selection
+          text='I will start using Ximplify for'
           control={control}
           placeholder="Select"
           options={option}
